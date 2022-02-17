@@ -1,0 +1,2998 @@
+body {
+  height: 6360px;
+  overflow-y: auto;
+}
+
+/* --------------------------------------------------------- */
+/* ---------------- Global text animations ----------------- */
+/* --------------------------------------------------------- */
+
+.animated-element{
+  opacity:0;
+  transition:all 2.4s ease-out
+}
+
+.animated-element.in-view {
+  opacity:1;
+  transform:translate3d(0,0,0)
+}
+
+// layout top ----------
+
+.big-title {
+	position: absolute;
+	color: #fff;
+	z-index: 100000;
+	font-size: 52px;
+	font-family: NanumMyeongjo-Regular, serif;
+  font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	line-height: 1.2;
+	margin: .67em 0;
+    top: 46%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    max-width: 1300px;
+    text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+.big-title:after {
+  content: "";
+	display: block;
+	text-align: center;
+	border-top: 1px solid var(--color-gold);
+	margin-top: 20px;
+	margin-left: 18rem;
+  width: 720px;
+}
+
+.sub-title {
+	position: absolute;
+	color: #FFF;
+	z-index: 100000;
+	font-size: 24px;
+	font-family: NanumMyeongjo-Regular, serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 2;
+	margin: .67em 0;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+.logo {
+	position: absolute;
+	color: #FFF;
+	z-index: 100000;
+	margin: .67em 0;
+    top: 72%;
+    left: 48%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 40%;
+    max-width: 130px;
+    text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+// --------
+
+.title-01 {
+	font-family: paralucent, sans-serif;
+	font-weight: 400;
+	font-size: 3.4rem;
+	color: var(--color-title);
+	margin: 1.7em 0;
+    // top: 50%;
+    // left: 2%;
+    -webkit-transform: translateX(1%) translateY(1%);
+    transform: translateX(1%) translateY(1%);
+    // max-width: 600px;
+    text-align: center;
+}
+
+.title-01:after {
+	content: "";
+	display: block;
+	border-top: 1px solid var(--color-white);
+	margin: 0.67em 0;
+    // top: 20%;
+    // left: 80%;
+    -webkit-transform: translateX(-52%) translateY(6%);
+    transform: translateX(-52%) translateY(6%);
+  width: 1220px;
+	margin-top: 14px;
+}
+
+.text-01 {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.4rem;
+  font-weight: 400;
+	letter-spacing: 8px;
+	line-height: 2.2;
+	color: var(--color-white);
+  max-width: 600px;
+  text-align: left;
+}
+
+.item__caption-title-02 {
+	font-family: Barlow_Condensed-regular, Helvetica, light, sans-serif;
+  font-weight: 400;
+  color: var(--color-palesun);
+	font-size: 8rem;
+	margin: .67em 0;
+    // top: 140%;
+    // left: 30%;
+    -webkit-transform: translateX(6%) translateY(-30%);
+    transform: translateX(6%) translateY(-30%);
+    max-width: 1080px;
+		letter-spacing: -4px;
+		line-height: 0.9;
+    text-align: center;
+}
+
+.item__caption-title-02-small {
+	font-family: Barlow_Condensed-regular, Helvetica, light, sans-serif;
+  font-weight: 400;
+  color: var(--color-palesun);
+	font-size: 6rem;
+	margin: .7em 0;
+    -webkit-transform: translateX(-10%) translateY(70%);
+    transform: translateX(-10%) translateY(70%);
+    max-width: 1080px;
+		letter-spacing: -4px;
+		line-height: 0.9;
+    text-align: center;
+}
+
+.item__caption-text-02 {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.6rem;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 2.2;
+	color: var(--color-white);
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(44%) translateY(-43%);
+    transform: translateX(44%) translateY(-43%);
+    max-width: 600px;
+    text-align: center;
+}
+
+.item__caption-text-aside {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.6rem;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 2.2;
+	color: var(--color-white);
+	margin: .67em 0;
+    top: 10%;
+    left: 20%;
+    -webkit-transform: translateX(14%) translateY(-83%);
+    transform: translateX(14%) translateY(-83%);
+    max-width: 1080px;
+    text-align: center;
+}
+
+.text-left {
+	position: fixed;
+	color: #FFF;
+	z-index: 100000;
+	font-size: 20px;
+	font-family: Barlow_Condensed-regular, Helvetica, light, sans-serif;
+  font-weight: 400;
+	/* text-transform: uppercase; */
+	letter-spacing: 2px;
+	line-height: 2;
+	margin: .67em 0;
+    top: 8%;
+    left: 20%;
+    -webkit-transform: translateX(90%) translateY(12%);
+    transform: translateX(90%) translateY(12%);
+    width: 70%;
+    max-width: 600px;
+    text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+// section adjust --------
+
+.left-wrapper-html {
+  float:left;
+  width: 40%; /* width ajustment between left & right */
+	height: 260px;
+}
+
+/* ----------------------------------------- */
+/* ---------------- Images ----------------- */
+/* ----------------------------------------- */
+
+.item:first-child .item__img-wrap {
+	width: calc(100vw - 2rem);
+	--aspect-ratio: 1500/844;
+	--image: url(../../assets/cape-verde.jpg);
+}
+
+.item:nth-child(2) .item__img-wrap {
+	width: 900px;
+	--aspect-ratio: 240/76;
+	--image: url(../../assets/cambodia.jpg);
+	border: solid 6px var(--color-gold);
+	border-radius: 50px;
+	margin: 0.67em 0;
+    // top: 20%;
+    // left: 80%;
+    -webkit-transform: translateX(26%) translateY(6%);
+    transform: translateX(26%) translateY(6%);
+    max-width: 900px;
+    text-align: center;
+}
+
+.item:nth-child(3) .item__img-wrap {
+	width: calc(100vw - 62rem);
+	/* padding-left: 140px; */
+	--aspect-ratio: 400/135;
+	--image: url(../../assets/img/belle-ile/belle-15.jpg);
+	border: solid 6px var(--color-gold);
+	border-radius: 50px;
+	margin: 0.67em 0;
+    // top: 20%;
+    // left: 80%;
+    -webkit-transform: translateX(52%) translateY(8%);
+    transform: translateX(52%) translateY(8%);
+		width: 700px;
+		margin-top: -80px;
+}
+
+.left-content-angkor {
+  margin:auto 0 auto auto;
+	margin-left: 680px;
+}
+
+.animated-element.slide-left-angkor {
+  transform:translate3d(-600px, 0, 0)
+}
+
+.item:nth-child(4) .item__img-wrap {
+	width: 900px;
+	--aspect-ratio: 1600/505;
+	--image: url(../../assets/sea.jpg);
+	border: solid 6px var(--color-gold);
+	border-radius: 50px;
+	margin: .67em 0;
+    top: 50%;
+    left: 80%;
+    -webkit-transform: translateX(56%) translateY(1.6%);
+    transform: translateX(56%) translateY(1.6%);
+    max-width: 900px;
+    text-align: center;
+}
+
+.item:nth-child(5) .item__img-wrap {
+	width: 600px;
+	--aspect-ratio: 520/76;
+	--image: url(../../assets/portrait.jpg);
+	margin: .67em 0;
+    // top: 20%;
+    // left: 40%;
+    -webkit-transform: translateX(36%) translateY(36%);
+    transform: translateX(36%) translateY(36%);
+    max-width: 600px;
+    text-align: center;
+}
+
+.item:nth-child(6) .item__img-wrap {
+	width: calc(100vw - 2rem);
+	--aspect-ratio: 1600/100;
+	--image: url(../../assets/sky-tree.png);
+}
+
+.item:nth-child(7) .item__img-wrap {
+	--aspect-ratio: 6000/1680;
+	--image: url(../../assets/sahara.jpg);
+	border: 10px solid var(--color-gold);
+	margin: .67em 0;
+  	top: 140%;
+  	left: 80%;
+  	-webkit-transform: translateX(136%) translateY(-2%);
+  	transform: translateX(136%) translateY(-2%);
+}
+
+.item:nth-child(8) .item__img-wrap {
+	width: 400px;
+	--aspect-ratio: 36/9;
+	--image: url(../../assets/sky-tree-02.png);
+	border: solid 6px var(--color-gold);
+	border-radius: 50px;
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(60%) translateY(52%);
+    transform: translateX(60%) translateY(52%);
+    max-width: 400px;
+    text-align: center;
+}
+
+.item:nth-child(9) .item__img-wrap {
+	width: 300px;
+	--aspect-ratio: 36/9;
+	--image: url(../../assets/sky-tree-04.png);
+	border: solid 6px var(--color-gold);
+	border-radius: 50px;
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(66%) translateY(42%);
+    transform: translateX(66%) translateY(42%);
+    max-width: 300px;
+    text-align: center;
+}
+
+/* -------------------------------------------------- */
+/* --------------------- Entete --------------------- */
+/* -------------------------------------------------- */
+
+/* ---------------- Separation line ------------------ */
+
+.line {
+	height: 0.5px;
+	opacity: 0.3;
+	background-color: #FFF;
+	position: absolute;
+	color: #FFF;
+	z-index: 100000;
+	margin: .67em 0;
+    top: 59.5%;
+    left: 60%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 40%;
+    max-width: 678px;
+    text-align: center;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.left-wrapper-angular {
+  float:left;
+  width: 40%; /* width ajustment between left & right */
+	height: 120px;
+}
+
+.left-content-angular {
+  /* margin:auto 0 auto auto */
+	margin-left: 380px;
+	margin-top: 260px;
+}
+
+.animated-element.slide-left-angular {
+  transform:translate3d(-800px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-angular {
+	font-size: 60px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-fluo);
+}
+
+/* text right ----------- */
+
+.right-wrapper-javascript {
+  float:right;
+  width: 60%;
+	height: 120px;
+}
+
+.right-content-javascript {
+  /* margin:auto 0 auto auto */
+	margin-right: 220px;
+	margin-top: 140px;
+}
+
+.animated-element.slide-right-javascript{
+  transform:translate3d(600px, 0, 0)
+}
+
+.terms-right-javascript {
+	font-size: 80px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 3;
+	color: var(--color-gold);
+}
+
+/* bottom (not use) ----------- */
+
+.animated-element.slide-bottom-angular {
+  transform:translate3d(0, 200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidde
+}
+
+/* top (not use) ----------- */
+
+.animated-element.slide-top-javascript {
+  transform:translate3d(0, -200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden
+}
+
+/* -------------------------------------------------- */
+/* -------------------- Part 01 --------------------- */
+/* -------------------------------------------------- */
+
+/* ---------- Textes ----------- */
+
+.link-left {
+	position: fixed;
+	z-index: 100000;
+	font-size: 16px;
+	font-family: Barlow_Condensed-regular, Helvetica, light, sans-serif;
+  font-weight: 400;
+	/* text-transform: uppercase; */
+	letter-spacing: 2px;
+	line-height: 2;
+	margin: .67em 0;
+    left: 86%;
+    -webkit-transform: translateX(190%) translateY(2%);
+    transform: translateX(170%) translateY(2%);
+    width: 80%;
+    max-width: 300px;
+    text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+.link-right-1 {
+    top: 20%;
+}
+
+.link-right-2 {
+    top: 25%;
+}
+
+.link-right-3 {
+    top: 30%;
+}
+
+.link-right-4 {
+    top: 35%;
+}
+
+.link-right-5 {
+    top: 40%;
+}
+
+/* ---------- Button effect ----------- */
+
+.ch-button-01 {
+	/* background-color: var(--color-gold); */
+	/* background: rgba(163,147,147, 0.8); */
+	background: radial-gradient(circle at center, #96805C 0, #434343 70%);
+	width: inherit;
+	height: inherit;
+	opacity: 0;
+	border-radius: 70%;
+
+	-webkit-transition: all 1.7s ease-in-out;
+	-moz-transition: all 1.7s ease-in-out;
+	-o-transition: all 1.7s ease-in-out;
+	-ms-transition: all 1.7s ease-in-out;
+	transition: all 1.7s ease-in-out;
+
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0.5);
+
+	// -webkit-backface-visibility: hidden;
+
+	margin: .67em 0;
+    top: 23%;
+    left: 74%;
+    -webkit-transform: translateX(240%) translateY(-34%);
+    transform: translateX(240%) translateY(-34%);
+}
+
+.ch-item:hover .ch-button-01 {
+	border-radius: 70%;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 0.8;
+
+	margin: .67em 0;
+    top: 27%;
+    left: 54%;
+    -webkit-transform: translateX(260%) translateY(-74%);
+    transform: translateX(260%) translateY(-74%);
+}
+
+/* -------------------------------------------------- */
+/* -------------------- Part 02 --------------------- */
+/* -------------------------------------------------- */
+
+/* ---------- Textes ----------- */
+
+.item__caption-title-01 {
+	font-family: paralucent, sans-serif;
+	font-weight: 400;
+	font-size: 6rem;
+	color: var(--color-title);
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(46%) translateY(146%);
+    transform: translateX(46%) translateY(146%);
+    max-width: 600px;
+    text-align: center;
+}
+
+.item__caption-text-01 {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.4rem;
+  font-weight: 400;
+	letter-spacing: 8px;
+	line-height: 2.2;
+	color: var(--color-white);
+	margin: .67em 0;
+    top: 10%;
+    left: 80%;
+    -webkit-transform: translateX(136%) translateY(-540%);
+    transform: translateX(136%) translateY(-540%);
+    max-width: 600px;
+    text-align: left;
+}
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.left-content-html {
+  /* margin:auto 0 auto auto */
+	margin-left: 310px;
+	margin-top: 476px;
+}
+
+.animated-element.slide-left-html {
+  transform:translate3d(-1200px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-html {
+	font-size: 90px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 0.9;
+	color: var(--color-palesun);
+	max-width: 900px;
+}
+
+/* text right ----------- */
+
+.right-wrapper-css {
+  float:right;
+  width: 60%;
+	height: 220px;
+}
+
+.right-content-css {
+  /* margin:auto 0 auto auto */
+	margin-right: 300px;
+	margin-top: 180px;
+}
+
+.animated-element.slide-right-css {
+  transform:translate3d(600px, 0, 0)
+}
+
+.terms-right-css {
+	font-size: 90px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 3;
+	color: var(--color-gold);
+}
+
+/* bottom (not use) ----------- */
+
+.animated-element.slide-bottom-html {
+  transform:translate3d(0, 200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidde
+}
+
+/* top (not use) ----------- */
+
+.animated-element.slide-top-css {
+  transform:translate3d(0, -200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden
+}
+
+/* -------------------------------------------------- */
+/* -------------------- Part 03 --------------------- */
+/* -------------------------------------------------- */
+
+/* --------- Background --------- */
+
+.background-gold {
+	background-color: var(--color-gold);
+	width: 100%;
+	height: 100%;
+}
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.left-wrapper-npm {
+  float:left;
+  width: 40%; /* width ajustment between left & right */
+	height: 140px;
+}
+
+.left-content-npm {
+  /* margin:auto 0 auto auto */
+	margin-left: 280px;
+}
+
+.animated-element.slide-left-npm {
+  transform:translate3d(-1200px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-npm {
+	font-size: 60px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-fluo);
+}
+
+/* bottom (not use) ----------- */
+
+.animated-element.slide-bottom-npm {
+  transform:translate3d(0, 200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidde
+}
+
+/* top (not use) ----------- */
+
+.animated-element.slide-top-npm {
+  transform:translate3d(0, -200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden
+}
+
+/* -------------------------------------------------- */
+/* -------------------- Part 04 --------------------- */
+/* -------------------------------------------------- */
+
+/* ---------- Textes ----------- */
+
+.item__caption-title-03 {
+	font-family: paralucent, sans-serif;
+	font-weight: 400;
+	font-size: 3rem;
+	color: var(--color-title);
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(126%) translateY(60%);
+    transform: translateX(126%) translateY(60%);
+    max-width: 600px;
+    text-align: center;
+}
+
+.item__caption-text-03 {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.8rem;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 2.2;
+	color: var(--color-fluo);
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(14%) translateY(16%);
+    transform: translateX(14%) translateY(16%);
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* ----------------- Button effect ------------------- */
+
+.ch-button-02 {
+	/* background-color: var(--color-gold); */
+	/* background: rgba(163,147,147, 0.8); */
+	background: radial-gradient(circle at center, #96805C 0, #434343 70%);
+	width: inherit;
+	height: inherit;
+	opacity: 0;
+	border-radius: 70%;
+
+	-webkit-transition: all 1.7s ease-in-out;
+	-moz-transition: all 1.7s ease-in-out;
+	-o-transition: all 1.7s ease-in-out;
+	-ms-transition: all 1.7s ease-in-out;
+	transition: all 1.7s ease-in-out;
+
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0.5);
+
+	// -webkit-backface-visibility: hidden;
+
+	margin: .67em 0;
+    top: 27%;
+    left: 54%;
+    -webkit-transform: translateX(640%) translateY(-84%);
+    transform: translateX(640%) translateY(-84%);
+}
+
+.ch-item:hover .ch-button-02 {
+	border-radius: 70%;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 0.8;
+
+	margin: .67em 0;
+    top: 27%;
+    left: 54%;
+    -webkit-transform: translateX(46%) translateY(-94%);
+    transform: translateX(46%) translateY(-94%);
+
+    /* width: 70%;
+    max-width: 700px;
+    text-align: right; */
+}
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.left-wrapper-git {
+  float:left;
+  width: 40%; /* width ajustment between left & right */
+	height: 140px;
+}
+
+.left-content-git {
+  /* margin:auto 0 auto auto */
+	margin-left: 280px;
+}
+
+.animated-element.slide-left-git {
+  transform:translate3d(-1200px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-git {
+	font-size: 60px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-white);
+}
+
+/* text right ----------- */
+
+.right-wrapper-sass {
+  float:right;
+  width: 60%;
+	height: 140px;
+}
+
+.right-content-sass {
+  /* margin:auto 0 auto auto */
+	margin-right: 280px;
+}
+
+.animated-element.slide-right-sass {
+  transform:translate3d(900px, 0, 0)
+}
+
+.terms-right-sass {
+	font-size: 70px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 3;
+	color: var(--color-palesun);
+}
+
+/* bottom (not use) ----------- */
+
+.animated-element.slide-bottom-git {
+  transform:translate3d(0, 200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidde
+}
+
+/* top (not use) ----------- */
+
+.animated-element.slide-top-sass {
+  transform:translate3d(0, -200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden
+}
+
+/* -------------------------------------------------- */
+/* -------------------- Part 05 --------------------- */
+/* -------------------------------------------------- */
+
+/* ---------- Title ----------- */
+
+.item__caption-title-04 {
+	font-family: paralucent, sans-serif;
+	font-weight: 400;
+	font-size: 3rem;
+	color: var(--color-title);
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(86%) translateY(48%);
+    transform: translateX(86%) translateY(48%);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ---------- Textes ----------- */
+
+.item__caption-text-04 {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.4rem;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 2.2;
+	color: var(--color-fluo);
+
+	border-top: 0.5px solid var(--color-fluo);
+	padding-top: 30px;
+	border-bottom: 0.5px solid var(--color-fluo);
+	padding-bottom: 30px;
+
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(136%) translateY(-360%);
+    transform: translateX(136%) translateY(-360%);
+    max-width: 600px;
+    text-align: center;
+}
+
+.text-left-02 {
+	position: fixed;
+	color: #FFF;
+	z-index: 100000;
+	font-size: 16px;
+	font-family: Barlow_Condensed-regular, Helvetica, sans-serif;
+  font-weight: 400;
+	/* text-transform: uppercase; */
+	letter-spacing: 2px;
+	line-height: 2;
+	margin: .67em 0;
+    top: 70%;
+    left: 20%;
+    -webkit-transform: translateX(230%) translateY(-90%);
+    transform: translateX(230%) translateY(-90%);
+    width: 70%;
+    max-width: 300px;
+    text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.animated-element.slide-bottom-typescript {
+  transform:translate3d(-900px, 0, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden
+}
+
+.left-wrapper-typescript {
+  float:left;
+  width: 70%; /* width ajustment between left & right */
+	height: 220px;
+}
+
+.left-content-typescript {
+  /* margin:auto 0 auto auto */
+	margin-left: 1080px;
+	margin-top: 130px;
+}
+
+.animated-element.slide-left-typescript {
+  transform:translate3d(-800px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-typescript {
+	font-size: 90px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-palesun);
+}
+
+/* text right ----------- */
+
+.right-wrapper-bootstrap {
+  float:right;
+  width: 30%;
+	height: 180px;
+}
+
+.right-content-bootstrap {
+  /* margin:auto 0 auto auto */
+	margin-left: -60px;
+	margin-top: 67px;
+}
+
+.animated-element.slide-right-bootstrap {
+  transform:translate3d(550px, 0, 0)
+}
+
+.terms-right-bootstrap {
+	font-size: 48px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 3;
+	color: var(--color-darkblue);
+}
+
+/* top (not use) ----------- */
+
+.animated-element.slide-top-bootstrap {
+  transform:translate3d(0, -200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden
+}
+
+/* --------------- Horizontal Gold Line ----------------- */
+
+.background-gold-line-01 {
+	background-color: var(--color-gold);
+	width: 100%;
+	height: 1px;
+}
+
+/* -------------------------------------------------- */
+/* -------------------- Part 06 --------------------- */
+/* -------------------------------------------------- */
+
+/* ---------- Title ----------- */
+
+.item__caption-title-05 {
+	font-family: paralucent, sans-serif;
+	font-weight: 400;
+	font-size: 3rem;
+	color: var(--color-title);
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(146%) translateY(60%);
+    transform: translateX(136%) translateY(60%);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ---------- Textes ----------- */
+
+.item__caption-text-05 {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.4rem;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 2.2;
+	color: var(--color-fluo);
+
+	border-top: 0.5px solid var(--color-fluo);
+	padding-top: 30px;
+	border-bottom: 0.5px solid var(--color-fluo);
+	padding-bottom: 30px;
+
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(126%) translateY(-120%);
+    transform: translateX(126%) translateY(-120%);
+    max-width: 600px;
+    text-align: center;
+}
+
+.text-left-03 {
+	position: fixed;
+	color: #FFF;
+	z-index: 100000;
+	font-size: 16px;
+	font-family: Barlow_Condensed-regular, Helvetica, sans-serif;
+  font-weight: 400;
+	/* text-transform: uppercase; */
+	letter-spacing: 2px;
+	line-height: 2;
+	margin: .67em 0;
+    top: 70%;
+    left: 20%;
+    -webkit-transform: translateX(200%) translateY(-70%);
+    transform: translateX(200%) translateY(-70%);
+    width: 70%;
+    max-width: 600px;
+    text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ---------------- Horizontal Gold Line ---------------- */
+
+.background-gold-line-02 {
+	background-color: var(--color-gold);
+	width: 100%;
+	height: 1px;
+  margin-bottom: 40px;
+}
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.left-wrapper-jquery {
+  float:left;
+  width: 70%; /* width ajustment between left & right */
+	height: 180px;
+}
+
+.left-wrapper-karma {
+  float:left;
+  width: 70%; /* width ajustment between left & right */
+	height: 180px;
+}
+
+.left-content-jquery {
+  /* margin:auto 0 auto auto */
+	margin-left: 280px;
+}
+
+.left-content-karma {
+  /* margin:auto 0 auto auto */
+	margin-left: 180px;
+}
+
+.animated-element.slide-left-jquery {
+  transform:translate3d(-1200px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-jquery {
+	font-size: 60px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-white);
+}
+
+.terms-left-karma {
+	font-size: 60px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-white);
+}
+
+/* text right ----------- */
+
+.right-wrapper-gulp {
+  float:right;
+  width: 70%;
+	height: 38%;
+}
+
+.right-content-gulp {
+  /* margin:auto 0 auto auto */
+	margin-right: 20%;
+	margin-top: -10%;
+}
+
+.animated-element.slide-right-gulp {
+  transform:translate3d(300px, 0, 0)
+}
+
+.terms-right-gulp {
+	font-size: 40px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 3;
+	color: var(--color-white);
+}
+
+.animated-element.slide-top-gulp {
+  transform:translate3d(0, -80px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden;
+}
+
+.animated-element.slide-bottom-karma {
+  transform:translate3d(0, 200px, 0);
+  -webkit-backface-visibility:hidden;backface-visibility:hidden;
+}
+/* -------------------------------------------------- */
+/* -------------------- Part 07 --------------------- */
+/* -------------------------------------------------- */
+
+/* ---------- Title ----------- */
+
+.item__caption-title-06 {
+	font-family: paralucent, sans-serif;
+	font-weight: 400;
+	font-size: 3rem;
+	color: var(--color-title);
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(46%) translateY(120%);
+    transform: translateX(46%) translateY(120%);
+    max-width: 600px;
+    text-align: center;
+}
+
+/* ---------- Textes ----------- */
+
+.item__caption-text-06 {
+	font-family: Barlow_Condensed-regular, serif;
+	font-size: 1.8rem;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 2.2;
+	color: var(--color-fluo);
+
+	border-top: 0.5px solid var(--color-fluo);
+	padding-top: 30px;
+	border-bottom: 0.5px solid var(--color-fluo);
+	padding-bottom: 30px;
+
+	margin: .67em 0;
+    top: 140%;
+    left: 80%;
+    -webkit-transform: translateX(106%) translateY(-120%);
+    transform: translateX(106%) translateY(-120%);
+    max-width: 600px;
+    text-align: center;
+}
+
+.text-left-04 {
+	position: fixed;
+	color: #FFF;
+	z-index: 100000;
+	font-size: 16px;
+	font-family: Barlow_Condensed-regular, Helvetica, sans-serif;
+  font-weight: 400;
+	/* text-transform: uppercase; */
+	letter-spacing: 2px;
+	line-height: 2;
+	margin: .67em 0;
+    top: 70%;
+    left: 20%;
+    -webkit-transform: translateX(200%) translateY(-70%);
+    transform: translateX(200%) translateY(-70%);
+    width: 70%;
+    max-width: 600px;
+    text-align: left;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Horizontal Gold Line ----------- */
+
+.background-gold-line-03 {
+	background-color: var(--color-gold);
+	width: 100%;
+	height: 1px;
+}
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.left-wrapper-rxjs {
+  float:left;
+  width: 60%; /* width ajustment between left & right */
+	height: 20px;
+}
+
+.left-content-rxjs {
+  /* margin:auto 0 auto auto */
+	margin-left: 280px;
+}
+
+.animated-element.slide-left-rxjs {
+  transform:translate3d(-1200px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-rxjs {
+	font-size: 60px;
+	font-family: Didot,serif;
+  font-weight: 70;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-white);
+}
+
+/* text right ----------- */
+
+.right-wrapper-node-js {
+  float:right;
+  width: 30%;
+	height: 20px;
+}
+
+.right-content-node-js {
+  /* margin:auto 0 auto auto */
+	margin-right: 280px;
+}
+
+.animated-element.slide-right-node-js {
+  transform:translate3d(600px, 0, 0)
+}
+
+.terms-right-node-js {
+	font-size: 40px;
+	font-family: Didot,serif;
+  font-weight: 200;
+	letter-spacing: 4px;
+	line-height: 3;
+	color: #2A2C33;
+}
+
+/* bottom (not use) ----------- */
+
+// .animated-element.slide-bottom-rxjs {
+//   transform:translate3d(0, 200px, 0);
+//   -webkit-backface-visibility:hidden;backface-visibility:hidden;
+// }
+
+/* top (not use) ----------- */
+
+// .animated-element.slide-top-node-js {
+//   transform:translate3d(0, -200px, 0);
+//   -webkit-backface-visibility:hidden;backface-visibility:hidden;
+// }
+
+/* -------------------------------------------------------------- */
+/* --------------------- Animation Elements --------------------- */
+/* -------------------------------------------------------------- */
+
+/* text left ----------- */
+
+.left-wrapper-nosql {
+  float:left;
+  width: 60%; /* width ajustment between left & right */
+	height: 80px;
+}
+
+.left-content-nosql {
+  /* margin:auto 0 auto auto */
+	margin-left: 280px;
+}
+
+.animated-element.slide-left-nosql {
+  transform:translate3d(-1200px, 0, 0) /* lenght & speed */
+}
+
+.terms-left-nosql {
+	font-size: 60px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 1.2;
+	color: var(--color-white);
+}
+
+/* text right ----------- */
+
+.right-wrapper-firebase {
+  float:right;
+  width: 30%;
+	height: 380px;
+}
+
+.right-content-firebase {
+  /* margin:auto 0 auto auto */
+	margin-right: 280px;
+}
+
+.animated-element.slide-right-firebase {
+  transform:translate3d(600px, 0, 0)
+}
+
+.terms-right-firebase {
+	font-size: 40px;
+	font-family: Didot,serif;
+  font-weight: 400;
+	letter-spacing: 4px;
+	line-height: 3;
+	color: #2A2C33;
+}
+
+/* bottom (not use) ----------- */
+
+// .animated-element.slide-bottom-nosql {
+//   transform:translate3d(0, 200px, 0);
+//   -webkit-backface-visibility:hidden;backface-visibility:hidde
+// }
+
+/* top (not use) ----------- */
+
+// .animated-element.slide-top-firebase {
+//   transform:translate3d(0, -200px, 0);
+//   -webkit-backface-visibility:hidden;backface-visibility:hidden
+// }
+
+/* -------------------------------------------------- */
+/* ----------------- Aside Slider ------------------- */
+/* -------------------------------------------------- */
+
+/* ---------- Background ----------- */
+
+// .title-for-slider {
+// 	background-color: var(--color-gold);
+// 	width: 100%;
+// 	height: 100%;
+//   font-size: 16px;
+// 	font-family: Barlow_Condensed-regular, Helvetica, sans-serif;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2px;
+//   padding: 20px;
+// }
+
+/* -------------------------------------------------- */
+/* -------------------- Footer ---------------------- */
+/* -------------------------------------------------- */
+
+// .item-footer {
+// 	margin: 0vh auto;
+// 	width: 100%;
+// 	position: relative;
+// 	will-change: transform;
+// }
+
+// .footer-blocks p {
+// 	display: inline-block;
+// 	color: #FFF;
+// 	padding: 20px;
+// 	text-align: left;
+// }
+
+// .footer-vertical-lines {
+// 	padding: 20px;
+// 	border-right: 1px solid;
+// }
+
+// .footer {
+// 	position: absolute;
+// 	color: #000;
+// 	background-color: #FFF;
+// 	padding: 30px;
+// }
+
+/* ---------- Positions ----------- */
+
+.vertical-padding {
+	margin: 0 auto;
+	margin-top: 400px;
+	padding-top: 100px;
+	width: 100%;
+	font-size: 16px;
+	font-family: Barlow_Condensed-regular, serif;
+  font-weight: 400;
+	letter-spacing: 3px;
+	line-height: 1.2;
+}
+
+/* @media screen ------------------------------------------------------------------ */
+
+@media screen and (max-width: 1310px) {
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-content-angular {
+    margin-left: 220px;
+  }
+
+  /* text right ----------- */
+
+  .right-content-javascript {
+    /* margin:auto 0 auto auto */
+    margin-right: 120px;
+  }
+
+  /* -------------------------------------------------- */
+	/* -------------------- Part 01 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(2) .item__img-wrap {
+		width: 600px;
+		--aspect-ratio: 240/120;
+	    -webkit-transform: translateX(20%) translateY(88%);
+	    transform: translateX(20%) translateY(88%);
+	    max-width: 600px;
+      text-align: center;
+	}
+
+	/* ---------- Textes ----------- */
+
+	.text-left {
+		width: 600px;
+	    top: 20%;
+	    left: 24%;
+	    -webkit-transform: translateX(170%) translateY(2%);
+	    transform: translateX(170%) translateY(2%);
+	    width: 70%;
+	    max-width: 600px;
+	}
+
+	.link-left {
+			top: 20%;
+	    left: 80%;
+	    -webkit-transform: translateX(190%) translateY(2%);
+	    transform: translateX(170%) translateY(2%);
+	}
+
+	.link-right-1 {
+	    top: 20%;
+	}
+
+	.link-right-2 {
+	    top: 25%;
+	}
+
+	.link-right-3 {
+	    top: 30%;
+	}
+
+	.link-right-4 {
+	    top: 35%;
+	}
+
+	.link-right-5 {
+	    top: 40%;
+	}
+
+  /* ---------- Button effect ----------- */
+
+  .ch-button-01 {
+      -webkit-transform: translateX(-60%) translateY(-102%);
+      transform: translateX(-60%) translateY(-102%);
+  }
+
+  .ch-item:hover .ch-button-01 {
+      -webkit-transform: translateX(-60%) translateY(-82%);
+      transform: translateX(-60%) translateY(-82%);
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-html {
+    margin-top: 260px;
+  }
+
+  .left-content-html {
+    margin-left: 70px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-css {
+    width: 85%;
+    margin-top: -240px;
+  }
+
+  .right-content-css {
+    margin-right: -220px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 02 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images (sea) ----------- */
+
+	.item:nth-child(3) .item__img-wrap {
+		display: none;
+	}
+
+	.item:nth-child(4) .item__img-wrap {
+    height: 400px;
+	    -webkit-transform: translateX(30%) translateY(126%);
+	    transform: translateX(30%) translateY(126%);
+	}
+
+	/* ---------- Title ----------- */
+
+	.item__caption-title-01 {
+	    -webkit-transform: translateX(0%) translateY(225%);
+	    transform: translateX(0%) translateY(225%);
+			padding-left: 120px;
+      text-align: left;
+	}
+
+  /* ---------- Texte ----------- */
+
+	.item__caption-text-01 {
+	    -webkit-transform: translateX(0%) translateY(-340%);
+	    transform: translateX(0%) translateY(-340%);
+			padding-left: 130px;
+	}
+
+	/* -------------------------------------------------- */
+	/* --------------- Part 03 - sahara ----------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(5) .item__img-wrap {
+		--aspect-ratio: 140/80;
+		-webkit-transform: translateX(20%) translateY(6%);
+    transform: translateX(20%) translateY(6%);
+	}
+
+	.item:nth-child(5) {
+		padding-left: 0px;
+	}
+
+	/* ---------- Title ----------- */
+
+	// .item__caption-title-02 {
+  //   -webkit-transform: translateX(0%) translateY(-40%);
+  //   transform: translateX(0%) translateY(-40%);
+  //   padding-left: 20px;
+  //   text-align: left;
+	// }
+
+  /* ---------- Texte ----------- */
+
+	.item__caption-text-02 {
+    -webkit-transform: translateX(0%) translateY(-30%);
+    transform: translateX(0%) translateY(-30%);
+    padding-left: 20px;
+    width: 340px;
+    text-align: left;
+	}
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 04 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(6) .item__img-wrap {
+		--aspect-ratio: 2400/550;
+    -webkit-transform: translateX(0%) translateY(4%);
+    transform: translateX(0%) translateY(4%);
+	}
+
+  /* ---------- Texte ----------- */
+
+	.item__caption-text-03 {
+	  text-align: left;
+	}
+
+  /* ---------- Title ----------- */
+
+  .item__caption-title-03 {
+    -webkit-transform: translateX(0%) translateY(360%);
+    transform: translateX(0%) translateY(360%);
+    text-align: left;
+    padding-left: 20px;
+    /* margin-bottom: 800px; */
+  }
+
+  /* --------------- Horizontal Gold Line ----------------- */
+
+  .background-gold-line-01 {
+    width: 1200px;
+  	margin-top: 210px;
+    margin-left: 20px;
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-typescript {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-typescript {
+    margin-left: 40px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-bootstrap {
+    width: 96%;
+  }
+
+  .right-content-bootstrap {
+    margin-right: 170px;
+    margin-top: 240px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 05 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(7) .item__img-wrap {
+		margin: auto;
+    height: 600px;
+	  	-webkit-transform: translateX(0%) translateY(1%);
+	  	transform: translateX(0%) translateY(1%);
+	}
+
+	/* ---------- Textes ----------- */
+
+	.item__caption-text-04 {
+    width: 620px;
+	    -webkit-transform: translateX(20%) translateY(36%);
+	    transform: translateX(20%) translateY(36%);
+      padding-left: 20px;
+      text-align: left;
+	}
+
+	.text-left-02 {
+    width: 620px;
+	    -webkit-transform: translateX(10%) translateY(-42%);
+	    transform: translateX(10%) translateY(-42%);
+      max-width: 720px;
+      text-align: left;
+	}
+
+  /* Title ----------- */
+
+  .item__caption-title-04 {
+    -webkit-transform: translateX(0%) translateY(420%);
+    transform: translateX(0%) translateY(420%);
+    max-width: 400px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  /* --------------- Horizontal Gold Line ----------------- */
+
+  .background-gold-line-02 {
+    width: 1200px;
+  	/* margin-top: 10px; */
+    margin-left: 20px;
+    /* -webkit-transform: translateX(0%) translateY(-30%);
+    transform: translateX(0%) translateY(-30%); */
+  }
+
+  /* ---------- Button effect ----------- */
+
+  .ch-button-02 {
+      -webkit-transform: translateX(-60%) translateY(-122%);
+      transform: translateX(-60%) translateY(-112%);
+  }
+
+  .ch-item:hover .ch-button-02 {
+      -webkit-transform: translateX(-60%) translateY(-122%);
+      transform: translateX(-60%) translateY(-112%);
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-jquery {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-jquery {
+    margin-left: 240px;
+    // margin-top: -270px;
+  }
+
+	.animated-element.slide-bottom-jquery {
+	  transform:translate3d(0, 200px, 0);
+	  -webkit-backface-visibility:hidden;backface-visibility:hidden;
+	}
+
+  /* text right ----------- */
+
+  .right-wrapper-gulp {
+    width: 96%;
+  }
+
+  .right-content-gulp {
+    margin-left: 20px;
+    margin-top: -60px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 06 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(8) .item__img-wrap {
+		/* width: 820px; */
+		--aspect-ratio: 46/19;
+		margin: auto;
+	    -webkit-transform: translateX(0%) translateY(44%);
+	    transform: translateX(0%) translateY(44%);
+      padding-left: 20px;
+	}
+
+	/* ---------- Textes ----------- */
+
+	.item__caption-text-05 {
+    width: 600px;
+	    -webkit-transform: translateX(0%) translateY(140%);
+	    transform: translateX(0%) translateY(140%);
+	    max-width: 600px;
+	    text-align: left;
+      padding-left: 160px;
+	}
+
+  /* Title ----------- */
+
+  .item__caption-title-05 {
+    width: 320px;
+      -webkit-transform: translateX(0%) translateY(210%);
+      transform: translateX(0%) translateY(210%);
+      text-align: left;
+      padding-left: 20px;
+  }
+
+  /* ---------- Horizontal Gold Line ----------- */
+
+  .background-gold-line-02 {
+    margin-left: 20px;
+    /* -webkit-transform: translateX(0%) translateY(498%);
+    transform: translateX(0%) translateY(498%); */
+    margin-top: 500px;
+  }
+
+  .background-gold-line-03 {
+    width: 420px;
+    margin-left: 20px;
+    margin-top: 254px;
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-rxjs {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-rxjs {
+    margin-left: 180px;
+    margin-top: -90px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-node-js {
+    width: 96%;
+  }
+
+  .right-content-node-js {
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 07 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(9) .item__img-wrap {
+    width: 520px;
+		--aspect-ratio: 114/62;
+		margin: auto;
+	    -webkit-transform: translateX(0%) translateY(-16%);
+	    transform: translateX(0%) translateY(-16%);
+      max-width: 520px;
+      padding-left: 26px;
+	}
+
+	/* ---------- Textes ----------- */
+
+	.item__caption-text-06 {
+    width: 320px;
+	    -webkit-transform: translateX(0%) translateY(-20%);
+	    transform: translateX(0%) translateY(-20%);
+      text-align: left;
+      padding-left: 40px;
+	}
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-nosql {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-nosql {
+    margin-left: 120px;
+    margin-top: 160px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-firebase {
+    width: 96%;
+  }
+
+  .right-content-firebase {
+    margin-left: 20px;
+    margin-top: 62px;
+  }
+
+  /* -------------------------------------------------- */
+  /* ----------------- Aside Slider ------------------- */
+  /* -------------------------------------------------- */
+
+  /* .aside-slider {
+    margin-top: -520px;
+  } */
+
+  /* ---------- Background ----------- */
+
+  .title-for-slider {
+    margin-top: 8px;
+  }
+
+  /* ---------- Gallery ----------- */
+
+  .gallery {
+    margin-top: 27px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Footer ---------------------- */
+	/* -------------------------------------------------- */
+
+  .item-footer {
+  	margin: 0vh auto;
+  	width: 100%;
+  	position: relative;
+  	will-change: transform;
+    /* -webkit-transform: translateX(0%) translateY(120%);
+    transform: translateX(0%) translateY(120%); */
+  }
+
+  .footer-blocks {
+  	padding-top: 230px;
+  }
+
+  .footer-blocks p {
+  	display: block;
+  	color: #FFF;
+  	padding: 20px;
+  	text-align: center;
+  }
+
+  .footer-vertical-lines {
+    margin: 0 auto;
+  	border-right: 0px;
+    border-bottom: 1px solid;
+    width: 50%;
+  }
+
+  .footer {
+  	position: absolute;
+  	color: #000;
+  	background-color: #FFF;
+  	padding: 30px;
+  }
+
+	/* ---------- Positions ----------- */
+
+	.vertical-padding {
+		margin: 0 auto;
+		margin-top: 60px;
+		padding-bottom: 720px;
+		width: 100%;
+	}
+
+}
+
+/* @media screen ------------------------------------------------------------------ */
+
+@media screen and (max-width: 1230px) {
+
+	/* -------------------------------------------------- */
+	/* --------------------- Entete --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:first-child .item__img-wrap {
+		width: calc(100vw - 2rem);
+		--aspect-ratio: 1500/1544;
+		--image: url(../../assets/cape-verde.jpg);
+	}
+
+	/* ---------- Textes ----------- */
+
+	.big-title {
+		font-size: 42px;
+	  top: 40%;
+	  left: 50%;
+	  width: 90%;
+	  max-width: 1300px;
+	}
+
+	.sub-title {
+		font-size: 16px;
+		line-height: 1.6;
+		top: 53%;
+		left: 50%;
+		width: 70%;
+	  max-width: 800px;
+	}
+
+	/* ---------- Separation line ----------- */
+
+	.line {
+	    top: 48%;
+	    left: 50%;
+	}
+
+	/* ---------- Logo ----------- */
+
+	.logo {
+		top: 70%;
+		left: 50%;
+		width: 90%;
+	  max-width: 200px;
+	}
+
+  /* -------------------------------------------------- */
+  /* -------------------- Part 01 --------------------- */
+  /* -------------------------------------------------- */
+
+  /* ---------- Images ----------- */
+
+  .item:nth-child(2) .item__img-wrap {
+    width: 600px;
+    --aspect-ratio: 240/120;
+      top: 20%;
+      -webkit-transform: translateX(20%) translateY(78%);
+      transform: translateX(20%) translateY(78%);
+      max-width: 600px;
+      text-align: center;
+  }
+
+	/* ---------- Textes ----------- */
+
+	.text-left {
+		width: 600px;
+			top: 12%;
+			left: 16%;
+			max-width: 600px;
+	}
+
+	.link-left {
+			top: 12%;
+			left: 84%;
+			-webkit-transform: translateX(190%) translateY(2%);
+			transform: translateX(170%) translateY(2%);
+	}
+
+	.link-right-1 {
+	    top: 20%;
+	}
+
+	.link-right-2 {
+	    top: 25%;
+	}
+
+	.link-right-3 {
+	    top: 30%;
+	}
+
+	.link-right-4 {
+	    top: 35%;
+	}
+
+	.link-right-5 {
+	    top: 40%;
+	}
+
+  /* ---------- Button effect ----------- */
+
+  .ch-button-01 {
+      -webkit-transform: translateX(-40%) translateY(-102%);
+      transform: translateX(-40%) translateY(-102%);
+  }
+
+  .ch-item:hover .ch-button-01 {
+      -webkit-transform: translateX(-60%) translateY(-102%);
+      transform: translateX(-60%) translateY(-102%);
+  }
+
+}
+
+/* @media screen ------------------------------------------------------------------ */
+
+@media screen and (max-width: 1130px) {
+
+  /* -------------------------------------------------- */
+  /* -------------------- Part 01 --------------------- */
+  /* -------------------------------------------------- */
+
+/* ---------- Button effect ----------- */
+
+  .ch-button-01 {
+      -webkit-transform: translateX(-30%) translateY(-102%);
+      transform: translateX(-30%) translateY(-102%);
+  }
+
+  .ch-item:hover .ch-button-01 {
+      -webkit-transform: translateX(-30%) translateY(-82%);
+      transform: translateX(-30%) translateY(-82%);
+  }
+
+}
+
+/* @media screen ------------------------------------------------------------------ */
+
+@media screen and (max-width:928px) {
+
+  /* --------------------- Animation Elements --------------------- */
+
+  /* text left ----------- */
+
+  .left-content-angular {
+    margin-left: 140px;
+  }
+
+  /* text right ----------- */
+
+  .right-content-javascript {
+    /* margin:auto 0 auto auto */
+    margin-right: 80px;
+  }
+
+  /* -------------------------------------------------- */
+  /* -------------------- Part 01 --------------------- */
+  /* -------------------------------------------------- */
+
+  /* ---------- Images ----------- */
+
+  .item:nth-child(2) .item__img-wrap {
+    width: 600px;
+    --aspect-ratio: 240/120;
+      top: 20%;
+      -webkit-transform: translateX(20%) translateY(108%);
+      transform: translateX(20%) translateY(108%);
+      max-width: 600px;
+      text-align: center;
+  }
+
+	/* ---------- Textes ----------- */
+
+	.text-left {
+		width: 600px;
+			top: 18%;
+			left: 16%;
+			max-width: 600px;
+	}
+
+	.link-left {
+			top: 2%;
+			left: 60%;
+			-webkit-transform: translateX(80%) translateY(10%);
+			transform: translateX(80%) translateY(10%);
+	}
+
+	.link-right-1 {
+		float: right;
+		left: 16%;
+	  top: 5%;
+	}
+
+	.link-right-2 {
+		float: right;
+		left: 36%;
+	  top: 5%;
+	}
+
+	.link-right-3 {
+	 	left: 56%;
+	 	top: 5%;
+	}
+
+	.link-right-4 {
+		float: right;
+		left: 16%;
+	  top: 10%;
+	}
+
+	.link-right-5 {
+		left: 36%;
+	  top: 10%;
+	}
+
+  /* ---------- Button effect ----------- */
+
+  .ch-button-01 {
+      -webkit-transform: translateX(-30%) translateY(-82%);
+      transform: translateX(-30%) translateY(-82%);
+  }
+
+  .ch-item:hover .ch-button-01 {
+      -webkit-transform: translateX(-30%) translateY(-62%);
+      transform: translateX(-30%) translateY(-62%);
+  }
+
+  /* -------------------------------------------------- */
+  /* -------------------- Part 05 --------------------- */
+  /* -------------------------------------------------- */
+
+  /* ---------- Textes ----------- */
+
+  .item__caption-text-04 {
+    width: 420px;
+  }
+
+  .text-left-02 {
+    width: 420px;
+  }
+
+}
+
+/* @media screen ------------------------------------------------------------------ */
+
+@media screen and (max-width:772px){
+
+	/* -------------------------------------------------- */
+	/* --------------------- Entete --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:first-child .item__img-wrap {
+		width: calc(100vw - 2rem);
+		--aspect-ratio: 1500/1944;
+		--image: url(../../assets/cape-verde.jpg);
+	}
+
+	/* ---------- Textes ----------- */
+
+	.big-title {
+		font-size: 42px;
+	  top: 40%;
+	  left: 50%;
+	  width: 90%;
+	  max-width: 1300px;
+	}
+
+	.sub-title {
+		font-size: 16px;
+		line-height: 1.6;
+		top: 54%;
+		left: 50%;
+		width: 70%;
+	  max-width: 800px;
+	}
+
+	/* ---------- Separation line ----------- */
+
+	.line {
+	    top: 48%;
+	    left: 50%;
+	}
+
+	/* ---------- Logo ----------- */
+
+	.logo {
+		top: 70%;
+		left: 50%;
+		width: 90%;
+	  max-width: 200px;
+	}
+
+  /* text left ----------- */
+
+  .left-content-angular {
+    margin-left: 60px;
+  }
+
+  /* text right ----------- */
+
+  .right-content-javascript {
+    /* margin:auto 0 auto auto */
+    margin-right: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* -------------------- Part 01 --------------------- */
+  /* -------------------------------------------------- */
+
+  /* ---------- Images ----------- */
+
+  .item:nth-child(2) .item__img-wrap {
+    width: 600px;
+    --aspect-ratio: 240/120;
+      top: 20%;
+      -webkit-transform: translateX(20%) translateY(152%);
+      transform: translateX(20%) translateY(152%);
+      max-width: 600px;
+      text-align: center;
+  }
+
+	/* ---------- Textes ----------- */
+
+	.text-left {
+		width: 600px;
+			top: 18%;
+			left: 16%;
+			max-width: 600px;
+	}
+
+	.link-left {
+			top: 2%;
+			left: 60%;
+			-webkit-transform: translateX(80%) translateY(10%);
+			transform: translateX(80%) translateY(10%);
+	}
+
+	.link-right-1 {
+		float: right;
+		left: 16%;
+	  top: 2%;
+	}
+
+	.link-right-2 {
+		left: 52%;
+	  top: 2%;
+	}
+
+	.link-right-3 {
+		float: right;
+	 	left: 16%;
+	 	top: 7%;
+	}
+
+	.link-right-4 {
+		left: 52%;
+	  top: 7%;
+	}
+
+	.link-right-5 {
+		left: 16%;
+	  top: 12%;
+	}
+
+  /* ---------- Button effect ----------- */
+
+  .ch-button-01 {
+      -webkit-transform: translateX(-30%) translateY(-42%);
+      transform: translateX(-30%) translateY(-42%);
+  }
+
+  .ch-item:hover .ch-button-01 {
+      -webkit-transform: translateX(-30%) translateY(-22%);
+      transform: translateX(-30%) translateY(-22%);
+  }
+
+  /* -------------------------------------------------- */
+  /* -------------------- Part 05 --------------------- */
+  /* -------------------------------------------------- */
+
+  /* ---------- Textes ----------- */
+
+  .item__caption-text-04 {
+    width: 380px;
+  }
+
+  .text-left-02 {
+    width: 380px;
+  }
+
+}
+
+/* @media screen ------------------------------------------------------------------ */
+
+@media screen and (max-width:620px) {
+
+  /* -------------------------------------------------- */
+	/* --------------------- Entete --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:first-child .item__img-wrap {
+		--aspect-ratio: 1500/3044;
+	}
+
+	/* ---------- Textes ----------- */
+
+	.big-title {
+	  top: 38%;
+	  max-width: 1300px;
+	}
+
+	.sub-title {
+		top: 55%;
+	}
+
+	/* ---------- Separation line ----------- */
+
+	.line {
+	    top: 48%;
+	    left: 50%;
+	}
+
+	/* ---------- Logo ----------- */
+
+	.logo {
+		top: 74%;
+	}
+
+  /* -------------------------------------------------- */
+  /* -------------------- Part 01 --------------------- */
+  /* -------------------------------------------------- */
+
+  /* ---------- Images ----------- */
+
+  .item:nth-child(2) .item__img-wrap {
+    width: 600px;
+    --aspect-ratio: 240/120;
+      top: 20%;
+      -webkit-transform: translateX(20%) translateY(152%);
+      transform: translateX(20%) translateY(152%);
+      max-width: 600px;
+      text-align: center;
+  }
+
+  /* ---------- Textes ----------- */
+
+  .text-left {
+    width: 420px;
+      -webkit-transform: translateX(0%) translateY(0%);
+      transform: translateX(0%) translateY(0%);
+    max-width: 420px;
+    padding-left: 70px;
+    /* margin-top: 600px; */
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-content-angular {
+    margin-left: 20px;
+  }
+
+  /* text right ----------- */
+
+  .right-content-javascript {
+    /* margin:auto 0 auto auto */
+    margin-right: 2px;
+  }
+}
+
+/* @media screen ------------------------------------------------------------------ */
+
+@media screen and (max-width:574px){
+
+	/* -------------------------------------------------- */
+	/* --------------------- Entete --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:first-child .item__img-wrap {
+		--aspect-ratio: 1500/3044;
+	}
+
+	/* ---------- Textes ----------- */
+
+	.big-title {
+	  top: 38%;
+	  max-width: 1300px;
+	}
+
+	.sub-title {
+		top: 55%;
+	}
+
+	/* ---------- Separation line ----------- */
+
+	.line {
+	    top: 48%;
+	    left: 50%;
+	}
+
+	/* ---------- Logo ----------- */
+
+	.logo {
+		top: 74%;
+	}
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text right ----------- */
+
+  .right-content-javascript {
+    /* margin:auto 0 auto auto */
+    margin-right: -40px;
+  }
+
+  /* -------------------------------------------------- */
+	/* -------------------- Part 01 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(2) .item__img-wrap {
+		width: 600px;
+		--aspect-ratio: 240/220;
+	    top: 20%;
+	    -webkit-transform: translateX(0%) translateY(126%);
+	    transform: translateX(0%) translateY(126%);
+	    max-width: 600px;
+	}
+
+  /* ---------- Textes ----------- */
+
+  .text-left {
+    width: 380px;
+    max-width: 380px;
+  }
+
+  /* ---------- Button effect ----------- */
+
+  .ch-button-01 {
+      -webkit-transform: translateX(0%) translateY(-32%);
+      transform: translateX(0%) translateY(-38%);
+  }
+
+  .ch-item:hover .ch-button-01 {
+      -webkit-transform: translateX(0%) translateY(-30%);
+      transform: translateX(0%) translateY(-38%);
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-html {
+    width: 15%; /* width ajustment between left & right */
+    margin-top: -40px;
+  }
+
+  .left-content-html {
+    margin-left: 70px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-css {
+    width: 85%;
+    margin-top: -40px;
+  }
+
+  .right-content-css {
+    margin-right: 180px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 02 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images (sea) ----------- */
+
+	.item:nth-child(3) .item__img-wrap {
+		display: none;
+	}
+
+	.item:nth-child(4) .item__img-wrap {
+    height: 400px;
+	    -webkit-transform: translateX(0%) translateY(170%);
+	    transform: translateX(0%) translateY(170%);
+	}
+
+	/* ---------- Title ----------- */
+
+	.item__caption-title-01 {
+	    -webkit-transform: translateX(0%) translateY(285%);
+	    transform: translateX(0%) translateY(285%);
+			padding-left: 120px;
+      text-align: left;
+	}
+
+  /* ---------- Texte ----------- */
+
+	.item__caption-text-01 {
+	    -webkit-transform: translateX(0%) translateY(-180%);
+	    transform: translateX(0%) translateY(-180%);
+			padding-left: 130px;
+	}
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-git {
+    width: 15%; /* width ajustment between left & right */
+    margin-top: -40px;
+  }
+
+  .left-content-git {
+    margin-left: 280px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-sass {
+    width: 85%;
+    margin-top: -40px;
+  }
+
+  .right-content-sass {
+    margin-right: 180px;
+  }
+
+	/* -------------------------------------------------- */
+	/* --------------- Part 03 - sahara ----------------- */
+	/* -------------------------------------------------- */
+
+  /* ---------- Background ----------- */
+
+  .background-gold {
+    -webkit-transform: translateX(0%) translateY(24%);
+    transform: translateX(0%) translateY(24%);
+  }
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(5) .item__img-wrap {
+		--aspect-ratio: 240/320;
+		-webkit-transform: translateX(0%) translateY(6%);
+    transform: translateX(0%) translateY(6%);
+	}
+
+	.item:nth-child(5) {
+		padding-left: 0px;
+	}
+
+	/* ---------- Title ----------- */
+
+	// .item__caption-title-02 {
+  //   -webkit-transform: translateX(0%) translateY(-50%);
+  //   transform: translateX(0%) translateY(-50%);
+  //   padding-left: 20px;
+  //   text-align: left;
+	// }
+
+  /* ---------- Texte ----------- */
+
+	.item__caption-text-02 {
+    -webkit-transform: translateX(0%) translateY(-100%);
+    transform: translateX(0%) translateY(-100%);
+    padding-left: 20px;
+    width: 340px;
+    text-align: left;
+	}
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 04 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(6) .item__img-wrap {
+		--aspect-ratio: 2400/1300;
+    -webkit-transform: translateX(0%) translateY(34%);
+    transform: translateX(0%) translateY(34%);
+	}
+
+  /* ---------- Texte ----------- */
+
+	.item__caption-text-03 {
+    width: 360px;
+	  -webkit-transform: translateX(0%) translateY(46%);
+	  transform: translateX(0%) translateY(46%);
+	  text-align: left;
+    padding-left: 20px;
+	}
+
+  /* ---------- Title ----------- */
+
+  .item__caption-title-03 {
+    -webkit-transform: translateX(0%) translateY(360%);
+    transform: translateX(0%) translateY(360%);
+    text-align: left;
+    padding-left: 20px;
+    /* margin-bottom: 800px; */
+  }
+
+  /* --------------- Horizontal Gold Line ----------------- */
+
+  .background-gold-line-01 {
+    width: 400px;
+  	margin-top: 210px;
+    margin-left: 20px;
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-typescript {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-typescript {
+    margin-left: 40px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-bootstrap {
+    width: 96%;
+  }
+
+  .right-content-bootstrap {
+    margin-right: 170px;
+    margin-top: 320px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 05 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(7) .item__img-wrap {
+		margin: auto;
+    height: 300px;
+	  	-webkit-transform: translateX(0%) translateY(-20%);
+	  	transform: translateX(0%) translateY(-20%);
+	}
+
+	/* ---------- Textes ----------- */
+
+	.item__caption-text-04 {
+    width: 320px;
+	    -webkit-transform: translateX(0%) translateY(-30%);
+	    transform: translateX(0%) translateY(-30%);
+      padding-left: 20px;
+      text-align: left;
+	}
+
+	.text-left-02 {
+    width: 360px;
+	    -webkit-transform: translateX(0%) translateY(-98%);
+	    transform: translateX(0%) translateY(-98%);
+      padding-left: 30px;
+      text-align: left;
+	}
+
+  /* Title ----------- */
+
+  .item__caption-title-04 {
+    -webkit-transform: translateX(0%) translateY(280%);
+    transform: translateX(0%) translateY(280%);
+    max-width: 400px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  /* --------------- Horizontal Gold Line ----------------- */
+
+  .background-gold-line-02 {
+    width: 400px;
+  	/* margin-top: 10px; */
+    margin-left: 20px;
+    -webkit-transform: translateX(0%) translateY(306%);
+    transform: translateX(0%) translateY(306%);
+  }
+
+  /* ---------- Button effect ----------- */
+
+  .ch-button-02 {
+      -webkit-transform: translateX(0%) translateY(-142%);
+      transform: translateX(0%) translateY(-132%);
+  }
+
+  .ch-item:hover .ch-button-02 {
+      -webkit-transform: translateX(0%) translateY(-142%);
+      transform: translateX(0%) translateY(-132%);
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-jquery {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-jquery {
+    margin-left: 240px;
+    margin-top: -250px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-gulp {
+    width: 96%;
+  }
+
+  .right-content-gulp {
+    margin-left: 20px;
+    margin-top: -60px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 06 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(8) .item__img-wrap {
+		width: 400px;
+		--aspect-ratio: 36/29;
+		margin: auto;
+	    -webkit-transform: translateX(0%) translateY(44%);
+	    transform: translateX(0%) translateY(44%);
+      padding-left: 20px;
+	}
+
+	/* ---------- Textes ----------- */
+
+	.item__caption-text-05 {
+    width: 320px;
+	    -webkit-transform: translateX(0%) translateY(100%);
+	    transform: translateX(0%) translateY(100%);
+	    max-width: 600px;
+	    text-align: left;
+      padding-left: 40px;
+	}
+
+  /* Title ----------- */
+
+  .item__caption-title-05 {
+    width: 320px;
+      -webkit-transform: translateX(0%) translateY(200%);
+      transform: translateX(0%) translateY(200%);
+      text-align: left;
+      padding-left: 20px;
+  }
+
+  /* ---------- Horizontal Gold Line ----------- */
+
+  .background-gold-line-02 {
+    margin-left: 20px;
+    /* -webkit-transform: translateX(0%) translateY(498%);
+    transform: translateX(0%) translateY(498%); */
+    margin-top: 500px;
+  }
+
+  .background-gold-line-03 {
+    width: 420px;
+    margin-left: 20px;
+    margin-top: 254px;
+  }
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-rxjs {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-rxjs {
+    margin-left: 180px;
+    margin-top: -90px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-node-js {
+    width: 96%;
+  }
+
+  .right-content-node-js {
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Part 07 --------------------- */
+	/* -------------------------------------------------- */
+
+	/* ---------- Images ----------- */
+
+	.item:nth-child(9) .item__img-wrap {
+		/* width: 480px; */
+		--aspect-ratio: 54/32;
+		margin: auto;
+	    -webkit-transform: translateX(0%) translateY(-40%);
+	    transform: translateX(0%) translateY(-40%);
+      padding-left: 26px;
+	}
+
+	/* ---------- Textes ----------- */
+
+	.item__caption-text-06 {
+    width: 320px;
+	    -webkit-transform: translateX(0%) translateY(-20%);
+	    transform: translateX(0%) translateY(-20%);
+      text-align: left;
+      padding-left: 40px;
+	}
+
+  /* -------------------------------------------------------------- */
+  /* --------------------- Animation Elements --------------------- */
+  /* -------------------------------------------------------------- */
+
+  /* text left ----------- */
+
+  .left-wrapper-nosql {
+    width: 4%; /* width ajustment between left & right */
+  }
+
+  .left-content-nosql {
+    margin-left: 240px;
+    margin-top: 80px;
+  }
+
+  /* text right ----------- */
+
+  .right-wrapper-firebase {
+    width: 96%;
+  }
+
+  .right-content-firebase {
+    margin-left: 20px;
+    margin-top: 62px;
+  }
+
+  /* -------------------------------------------------- */
+  /* ----------------- Aside Slider ------------------- */
+  /* -------------------------------------------------- */
+
+  /* .aside-slider {
+    margin-top: -520px;
+  } */
+
+  /* ---------- Background ----------- */
+
+  .title-for-slider {
+    margin-top: 8px;
+  }
+
+  /* ---------- Gallery ----------- */
+
+  .gallery {
+    margin-top: 27px;
+  }
+
+	/* -------------------------------------------------- */
+	/* -------------------- Footer ---------------------- */
+	/* -------------------------------------------------- */
+
+  .item-footer {
+  	margin: 0vh auto;
+  	width: 100%;
+  	position: relative;
+  	will-change: transform;
+    /* -webkit-transform: translateX(0%) translateY(120%);
+    transform: translateX(0%) translateY(120%); */
+  }
+
+  .footer-blocks {
+  	padding-top: 230px;
+  }
+
+  .footer-blocks p {
+  	display: block;
+  	color: #FFF;
+  	padding: 20px;
+  	text-align: center;
+  }
+
+  .footer-vertical-lines {
+    margin: 0 auto;
+  	border-right: 0px;
+    border-bottom: 1px solid;
+    width: 50%;
+  }
+
+  .footer {
+  	position: absolute;
+  	color: #000;
+  	background-color: #FFF;
+  	padding: 30px;
+  }
+
+	/* ---------- Positions ----------- */
+
+	.vertical-padding {
+		margin: 0 auto;
+		margin-top: 60px;
+		padding-bottom: 720px;
+		width: 100%;
+	}
+}
